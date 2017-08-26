@@ -1,0 +1,383 @@
+body {
+    font: 100 12px 'Roboto', sans-serif;
+}
+
+.divWrapper {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.mainNav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+.right-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+ul .leftSide-nav,
+ul .rightSide-nav,
+ul .nav2-category,
+ul .mobileRight {
+    display: inline;
+}
+
+ul .leftSide-nav {
+    padding: 14px 0;
+    border-right: 1px solid #e0e0e0;
+}
+
+.rightSide-nav {
+    margin-right: 20px;
+}
+
+.nav-text {
+    color: #8D8D8D;
+}
+
+.leftLogo-nav {
+    padding: 0 25px;
+}
+
+.nav-nike {
+    padding: 0 25px;
+}
+
+.my-Acct {
+    display: flex;
+    !important align-items: center;
+}
+
+.myAcct-text {
+    color: black;
+}
+
+.contact-email {
+    padding-top: 20px;
+    width: 100%
+}
+
+.email-section {
+    position: relative;
+}
+
+.email-text {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+}
+
+.contact-section {
+    height: 300px;
+    width: 100%;
+    background: #1e1e1e;
+}
+
+
+
+
+
+/* _____________________________________________________________________ */
+
+
+/* ====== Manages color change for the logos and text in main-nav ====== */
+
+.hover-black:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.jordan {
+    width: 15px;
+    -webkit-filter: saturate(0) opacity(.5);
+    filter: saturate(0) opacity(.5);
+}
+
+.jordan:hover {
+    -webkit-filter: saturate(10) opacity(1);
+    filter: saturate(10) opacity(1);
+}
+
+.hurley {
+    width: 45px;
+}
+
+.converse {
+    width: 70px;
+}
+
+.hurley,
+.converse,
+.shop-icon,
+.my-Acct {
+    -webkit-filter: opacity(.4);
+    filter: opacity(.4);
+}
+
+.hurley:hover,
+.converse:hover,
+.shop-icon:hover,
+.my-Acct:hover {
+    -webkit-filter: opacity(1);
+    filter: opacity(1);
+}
+
+.login-head {
+    width: 18px;
+    margin-right: 5px;
+}
+
+.shop-icon {
+    width: 17px;
+    padding-top: 5px;
+}
+
+.flag-icon {
+    width: 17px;
+}
+
+
+
+/* _____________________________________________________________________ */
+
+
+/* ========== End color change management for the logos in nav ========= */
+
+
+/* ================================ lower nav ========================== */
+
+.lower-nav {
+    padding: 45px 0 20px;
+}
+
+.nikeSwoosh {
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    margin: 8px 10px 0 0;
+    width: 60px;
+    margin-left: 20px;
+}
+
+.center-nav {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.cat-name {
+    margin-right: 30px;
+    font: 500 15px 'Oswald', sans-serif;
+    color: #000;
+}
+
+.cat-name:hover {
+    color: black;
+    text-decoration: none;
+}
+
+input[type=text] {
+    position: absolute;
+    top: 45px;
+    right: 10px;
+    margin: 8px 10px 0 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+
+
+/* _____________________________________________________________________ */
+
+
+/* ============================= Mobile nav ============================ */
+
+.mobile-nav {
+    display: none;
+}
+
+
+/* _____________________________________________________________________ */
+
+
+/* =========================== Carousel slide ========================== */
+
+.slider-Carousel {
+    height: 60px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+    margin-left: 100px;
+}
+
+
+.carousel {
+    max-width: 100%;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+.shop-now {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.shop-now:hover {
+    text-decoration: none;
+    font-weight: bold;
+
+    color: #8D8D8D;
+}
+
+
+
+/* _____________________________________________________________________ */
+
+
+/* ============================= drop-downs ============================ */
+
+#acct-drop {
+    width: 100px;
+    padding: 20px;
+    position: relative;
+    top: -5px;
+    border: 1px solid #8D8D8D;
+    border-top: 3px solid #000;
+}
+
+.subNavText {
+    margin-top: 10px;
+    color: #8D8D8D;
+}
+
+.subNavText:first-child {
+    margin-top: 0;
+}
+
+
+
+}
+
+.subMenuAppear {
+    display: none;
+}
+
+
+
+/*   =======  media brakpoints  ======== */
+@media screen and (max-width: 675px),
+handheld and (orientation: landscape) {
+    /* _____________________________________________________________________ */
+    /* ============================= Desktop nav ============================ */
+
+    .divWrapper,
+    .lower-nav {
+        display: none;
+    }
+    /* _____________________________________________________________________ */
+    /* ============================= Mobile nav ============================ */
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .mobileRight-nav {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .nikeSwoosh {
+        top: 5px;
+    }
+
+    .mobileRight-nav {
+        height: 40px;
+        margin-top: 15px;
+        text-align: right;
+    }
+
+    .mobileRight {
+        margin-right: 20px;
+    }
+
+
+    .nikeSwoosh {
+        margin-left: 10px;
+    }
+
+    .search-icon {
+        width: 20px;
+    }
+
+    .shop-icon {
+        width: 22px;
+        margin-top: 5px;
+        margin-right: 0;
+    }
+
+    .burger-icon {
+        width: 20px;
+    }
+
+    .shop-icon {
+        -webkit-filter: opacity(1);
+        filter: opacity(1);
+    }
+}
+
+
+
+/* _____________________________________________________________________ */
+
+/* =========================== Carousel slide ========================== */
+.slider-Carousel {
+    height: 50px;
+    background-color: whitesmoke;
+}
+
+.carousel-inner {
+    height: 50px;
+}
+
+.sneaker-carousel {
+    max-width: 100%;
+}
+
+.mySlides {
+    width: 100%;
+}
+
+.carousel-item {
+    position: relative;
+    left: 30%;
+}
+
+.carousel-control-prev-icon  {
+  background-color: whitesmoke;
+}
+
+
+.carousel-control-next-icon  {
+  background-color: whitesmoke;
+}
